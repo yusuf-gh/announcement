@@ -21,20 +21,4 @@ class Announcement(models.Model):
     def __str__(self):
         return self.title
     
-class Header(models.Model):
-    title = models.TextField(blank=True)
-    img = models.FileField(upload_to="img/announcement", null=True, blank=True)
-    text = models.TextField(null=True, blank=True)
-    
-    def __str__(self):
-        return self.title
-    
-class Section(Header):
-    pass
-
-class Card(Header):
-    pass
-
-class Section2(Header):
-    pass
     

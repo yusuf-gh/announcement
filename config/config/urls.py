@@ -28,9 +28,14 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('users.urls')),
     path('ann/', include('announcements.urls')),
+    path('header/', include('header.urls')),
+    path('card/', include('card.urls')),
+    path('section/', include('section.urls')),
+    path('section2/', include('section2.urls')),
     
     
     re_path(r"^swagger(?P<format>\.json|\.yaml)$", schema_view.without_ui(cache_timeout=0), name="schema-json"),
     re_path(r"^swagger/$", schema_view.with_ui("swagger", cache_timeout=0), name="schema-swagger-ui"),
-    re_path(r"^redoc/$", schema_view.with_ui("redoc", cache_timeout=0), name="schema-redoc"),
+    re_path(r"^redoc/$", schema_view.with_ui("redoc", cache_timeout=0), name="schema-redoc")
+    
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_URL)

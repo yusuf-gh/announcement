@@ -4,7 +4,7 @@ from django.utils import timezone
 
 class User(models.Model):
     id = models.IntegerField(
-        validators=[MinValueValidator(1), MaxValueValidator(1000)],
+        validators=[MinValueValidator(1), MaxValueValidator(999999)],
         help_text="Введите свой ID в ручную",
         primary_key=True
     )
