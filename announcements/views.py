@@ -1,5 +1,4 @@
 from rest_framework import generics
-from django.shortcuts import render
 from .models import Announcement
 from .serializers import AnnSerialzers
 from django.shortcuts import get_object_or_404
