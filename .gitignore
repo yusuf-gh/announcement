@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+static_media/
 venv/
 db.sqlite3/
 build/

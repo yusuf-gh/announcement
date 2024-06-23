@@ -85,7 +85,7 @@ CORS_ALLOW_HEADERS = [
     "x-requested-with",
 ]
 
-ROOT_URLCONF = 'config.config.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
@@ -103,7 +103,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'config.config.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
